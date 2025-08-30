@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <title>BIT Entrance Exam Registration </title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    .exam-form {
+      width: 500px;
+    }
+    .exam-form h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .exam-form label {
+      display: block;
+      margin-top: 1em;
+    }
+    .exam-form select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 0.3em;
+      box-sizing: border-box;
+    }
+    .gender-options {
+      display: flex;
+      gap: 1em;
+      margin-top: 0.5em;
+    }
+    .gender-options label {
+      display: flex;
+      align-items: center;
+      
+    }
+    .exam-form button {
+      margin-top: 1.5em;
+      padding: 10px 20px;
+      background-color: #004080;
+      color: white;
+      
+      
+    }
+    .exam-form button:hover {
+      background-color: #003060;
+    }
+  </style>
+</head>
+<body>
+  <form class="exam-form" >
+    <h2>BIT Entrance Exam Registration (TU)</h2>
+
+    <label for="studentName">Full Name *</label>
+    <input type="text" id="studentName" name="studentName" placeholder="Your full name" required />
+
+    <label>Gender *</label>
+    <div class="gender-options">
+      <label><input type="radio" name="gender" value="male" required /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label>
+    </div>
+
+    <label for="studentID">Student ID  *</label>
+    <input type="text" id="studentID" name="studentID" placeholder="e.g., ########" required />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" placeholder="xyz@university.edu" required />
+
+    <label for="paymentID">Voucher Code *</label>
+    <input type="text" id="paymentID" name="paymentID" placeholder="Enter payment / voucher code" required />
+
+    <label for="transcript">Upload Transcript (Grade 11 & 12 )</label>
+    <input type="file" id="transcript" name="transcript" accept=".pdf,.jpg,.jpeg" required />
+
+    <button type="submit">Register </button>
+  </form>
+</body>
+</html>
