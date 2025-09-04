@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <title>Simple Div-Based Layout</title>
+  <style>
+    body {
+   
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      background-color: #e21414; 
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar {
+      background-color: #f9a896; 
+      height: 40px;
+    }
+
+    .main {
+      display: flex;
+    }
+    .sidebar,
+    .content,
+    .extra {
+      padding: 20px;
+      color: white;
+      flex: 1;
+    }
+
+    .sidebar {
+      background-color: #bcbcbc; 
+    }
+    .content {
+      background-color: #c7eb17; 
+    }
+    .extra {
+      background-color: #9ddbee;
+    }
+
+    .footer {
+      background-color: #666666;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Header</div>
+  <div class="navbar"></div>
+  <div class="main">
+    <div class="sidebar">Left Column</div>
+    <div class="content">Middle Column</div>
+    <div class="extra">Right Column</div>
+  </div>
+  <div class="footer">Footer</div>
+</body>
+</html>
